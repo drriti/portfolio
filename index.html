@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>personal portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container"></div>
+            <nav>
+                <img src="images/log.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text"> 
+            <p>UI/UX Designer</p>
+            <h1>Hi i am <span>Drriti</span> Pasrija </h1>
+        </div>
+        <!-----about---->
+        <div id="about">
+            <div class="container">
+             <div class="row">
+              <div class="about-col-1">
+            <img src="images/me.png.jpeg"> 
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hello! I'm a passionate Visual Communication Designer with a keen eye for aesthetics and storytelling.
+             I love crafting compelling visuals that communicate ideas effectively, whether through branding, digital design, 
+             or illustration. My work blends creativity with strategy, ensuring every design serves a purpose.
+              I'm always eager to explore new design trends, experiment with different mediums, 
+              and bring meaningful concepts to life.
+             Welcome to my space—where art meets communication</p>
+             <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/app interface</li>
+                    <li><span>Graphic Design</span><br>barnding and all</li>
+                    <li><span>Video editing</span><br>visual appeling videos</li>
+                </ul>
+            </div>
+            <div class="tab-contents"id="Experience">
+                <ul>
+                    <li><span>2000-2001</span><br>internship</li>
+                    <li><span>2001-2004</span><br>job</li>
+                    <li><span>2004-present</span><br>blah blah</li>
+                </ul>
+            </div>
+            <div class="tab-contents"id="Education">
+                <ul>
+                    <li><span>school</span><br>12th tak </li>
+                    <li><span>college</span><br>marne tak </li>
+                    <li><span>post graduate</span><br>blah blah</li>
+                </ul>
+            </div>
+         </div>
+        </div>
+        </div>
+        </div>
+<!------services------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>I create visually appealing and user-friendly websites that enhance user experience.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Branding</h2>
+                <p>Developing cohesive brand identities, from logos to visual storytelling strategies.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Graphic Design</h2>
+                <p>Designing compelling graphics for social media, marketing, and digital content.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+    </body>
+</html>

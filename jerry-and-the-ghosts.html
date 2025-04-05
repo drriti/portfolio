@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry and the Ghosts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html#portfolio" class="back-button">&#8592; Back to Portfolio</a>
+        <h1 class="project-title">Jerry and the Ghosts</h1>
+        <p class="project-description">"Jerry and the Ghosts" is a fun children's comic about a college student, Jerry, who moves into a new house where three ghosts try to scare him with harmless pranks. However, in the end, he is more scared by his exam results!</p>
+        
+        <div class="image-grid">
+            <img src="images/standing softcover book mockup.png" alt="Comic Panel 1" class="large-image">
+            <div class="small-images">
+                <img src="images/A4 Magazine Mockup - Free Version 11.png" alt="Comic Panel 2">
+                <img src="images/A4 Magazine Mockup - Free Version 9.png" alt="Comic Panel 3">
+                <img src="images/A4 Magazine Mockup - Free Version 12.png" alt="Comic Panel 4">
+            </div>
+            <div class="small-images">
+                <img src="images/A4 Magazine Mockup - Free Version 13.png" alt="Comic Panel 5">
+                <img src="images/A4 Magazine Mockup 2.png" alt="Comic Panel 6">
+                <img src="images/A4 Magazine Mockup - Free Version 10.png" alt="Comic Panel 7">
+            </div>
+        </div>
+        <div class="view-comic-button">
+            <a href="https://online.fliphtml5.com/ytxsb/aefz/" target="_blank" class="btn">View the Full Comic</a>
+        </div>
+    </div>
+    <div class="custom-cursor"></div>
+    <script>
+        const cursor = document.querySelector(".custom-cursor");
+        
+        document.addEventListener("mousemove", (e) => {
+          cursor.style.left = e.clientX + "px";
+          cursor.style.top = e.clientY + "px";
+        });
+        </script>
+<style>
+    .custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+  background-color: transparent;
+  position: fixed;
+  pointer-events: none;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+}
+
+</style>        
+</body>
+</html>

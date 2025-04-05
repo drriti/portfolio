@@ -3,26 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>personal portfolio</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="header">
-            <div class="container"></div>
+            <div class="container">
             <nav>
-                <img src="images/log.png" class="logo">
+                <img src="images/DRRITI.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
+            
             <div class="header-text"> 
-            <p>UI/UX Designer</p>
-            <h1>Hi i am <span>Drriti</span> Pasrija </h1>
+                <p class="typing-text">Visual Communicator</p>
+
+
+            <h1>Hi I am <span>Drriti</span> Pasrija </h1>
         </div>
         <!-----about---->
         <div id="about">
@@ -40,36 +43,41 @@
               and bring meaningful concepts to life.
              Welcome to my space—where art meets communication</p>
              <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                <p class="tab-links"onclick="opentab('Experience')">Experience</p>
-                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                <p class="tab-links active-link" onclick="opentab('Skills', event)">Skills</p>
+                <p class="tab-links" onclick="opentab('Experience', event)">Experience</p>
+                <p class="tab-links" onclick="opentab('Education', event)">Education</p>
+                
             </div>
             <div class="tab-contents active-tab" id="Skills">
                 <ul>
-                    <li><span>UI/UX</span><br>Designing Web/app interface</li>
-                    <li><span>Graphic Design</span><br>barnding and all</li>
-                    <li><span>Video editing</span><br>visual appeling videos</li>
+                    <li><span>UI/UX Design</span><br>Designing intuitive web and app interfaces with a user-centered approach.</li>
+                    <li><span>Graphic Design</span><br>Creating branding materials, social media graphics, and marketing visuals.</li>
+                    <li><span>Video Editing</span><br>Editing visually compelling videos with motion graphics and color grading.</li>
+                    <li><span>Illustration</span><br>Crafting digital illustrations and visual storytelling assets.</li>
+                    <li><span>Brand Strategy</span><br>Developing brand identity and positioning for businesses and personal brands.</li>
                 </ul>
             </div>
-            <div class="tab-contents"id="Experience">
+            
+            <div class="tab-contents" id="Experience">
                 <ul>
-                    <li><span>2000-2001</span><br>internship</li>
-                    <li><span>2001-2004</span><br>job</li>
-                    <li><span>2004-present</span><br>blah blah</li>
+                    <li><span>2024 - Present</span><br>Freelance Graphic & UI/UX Designer</li>
+                    <li><span>2023</span><br>Video Editor at Uncutter Company</li>
+                    <li><span>2022</span><br>Campus Ambassador at Designershala</li>
                 </ul>
             </div>
-            <div class="tab-contents"id="Education">
-                <ul>
-                    <li><span>school</span><br>12th tak </li>
-                    <li><span>college</span><br>marne tak </li>
-                    <li><span>post graduate</span><br>blah blah</li>
-                </ul>
-            </div>
+            
+            <div class="tab-contents" id="Education">
+    <ul>
+        <li><span>Bachelor of Design (B.Des) - Visual Communication</span><br>Currently pursuing at United World Institute of Design</li>
+        <li><span>Senior Secondary (12th Grade) - Commerce Stream</span><br>Sr. Sc. School St. Sophia</li>
+    </ul>
+</div>
+
          </div>
         </div>
+    </div>
         </div>
-        </div>
-<!------services------>
+<!------services------->
 <div id="services">
     <div class="container">
         <h1 class="sub-title">My Services</h1>
@@ -77,35 +85,156 @@
             <div>
                 <h2>Web Design</h2>
                 <p>I create visually appealing and user-friendly websites that enhance user experience.</p>
-                <a href="#">Learn More</a>
+                <a href="#contact">Work With Me</a>
             </div>
             <div>
                 <h2>Branding</h2>
                 <p>Developing cohesive brand identities, from logos to visual storytelling strategies.</p>
-                <a href="#">Learn More</a>
+                <a href="#contact">Work With Me</a>
             </div>
             <div>
                 <h2>Graphic Design</h2>
                 <p>Designing compelling graphics for social media, marketing, and digital content.</p>
-                <a href="#">Learn More</a>
+                <a href="#contact">Work With Me</a>
+            </div>
+            <div>
+                <h2>Motion Graphics</h2>
+                <p>Creating short, engaging animations using After Effects to communicate ideas with movement and style.</p>
+                <a href="#contact">Work With Me</a>
             </div>
         </div>
     </div>
 </div>
 
+
+<!-----portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            
+            <!-- First 3 Projects -->
+            <div class="work">
+                <img src="images/Business_Card_Mockup_2.png" alt="Jrissy - Jewelry Brand Identity">
+                <div class="layer">
+                    <h3>Jrissy - Jewelry Brand Identity</h3>
+                    <p>A premium brand identity design for a modern jewelry brand.</p>
+                    <a href="jrissy.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/book cover finalll ka final - Copy.jpg" alt="The Sweetest Oblivion">
+                <div class="layer">
+                    <h3>The Sweetest Oblivion</h3>
+                    <p>A redesigned premium book cover featuring roses and thorns for a mafia romance novel.</p>
+                    <a href="sweetest-oblivion.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/comic.png" alt="Jerry and the Ghosts">
+                <div class="layer">
+                    <h3>Jerry and the Ghosts</h3>
+                    <p>A fun children's comic about a student haunted by friendly ghosts.</p>
+                    <a href="jerry-and-the-ghosts.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
         </div>
+
+<!-- Hidden Projects Section (wrap these in a div with id="hiddenProjects") -->
+<div class="work-list hidden-projects" id="hiddenProjects" style="display: none;">
+
+    <div class="work">
+        <img src="images/SEA.png" alt="3D Model - Futuristic Tape Dispenser">
+        <div class="layer">
+            <h3>3D Modeled Tape Dispenser</h3>
+            <p>A functional, futuristic tape dispenser designed and modeled in Blender, optimized for 3D printing and everyday desk use.</p>
+            <a href="3d-model-project.html"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </div>
+<!-- Project 5: Motion Graphics -->
+<div class="work">
+    <a href="motion-graphics.html">
+      <img src="images/motion.png" alt="Motion Graphics Thumbnail">
+      <div class="layer">
+        <h3>Motion Graphics</h3>
+        <p> After Effects videos presented in an interactive grid.</p>
+      </div>
+    </a>
+  </div>
+  
+
+<!-- Project 6 - UI/UX Design -->
+<div class="work">
+    <img src="images/iMac_on_Table_Mockup_1.png" alt="UI/UX Design" />
+    <div class="layer">
+      <h3>UI/UX Design</h3>
+      <p>Web and mobile UI projects with clean visuals and intuitive flows.</p>
+      <a href="project6.html"><i class="fas fa-external-link-alt"></i></a>
+    </div>
+  </div>
+  
+  
+  
+    </div>
+        <!-- See More Button -->
+        <button class="btn" onclick="toggleProjects()">See More</button>
     </div>
 </div>
 
 
+<!------contact----->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> drriti1103@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 91+ 7206931103</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/drriti_11" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/drriti-pasrija" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>                
+        </div>
+    </div>
+    <div class="copyright">
+        
+    </div>
+</div>
+<div class="custom-cursor"></div>
 
+<div id="preloader">
+    <div class="loader"></div>
+  </div>
 
+  
+  <script>
+    window.addEventListener("load", () => {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 500);
+    });
+  </script>
+  
 
 <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
+    function opentab(tabname, event) {
         for(tablink of tablinks){
             tablink.classList.remove("active-link");
         }
@@ -116,5 +245,68 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+<script>
+    function toggleProjects() {
+        const hiddenProjects = document.getElementById("hiddenProjects");
+        const button = document.querySelector("#portfolio .btn");
+
+        if (hiddenProjects.style.display === "none" || hiddenProjects.style.display === "") {
+            hiddenProjects.style.display = "grid";  // Use "grid" or "flex" if your layout needs it
+            button.innerText = "See Less";
+        } else {
+            hiddenProjects.style.display = "none";
+            button.innerText = "See More";
+        }
+    }
+</script>
+<script>
+function doPost(e) {
+    var sheet = SpreadsheetApp.openById("https://docs.google.com/spreadsheets/d/1_dDLfYf60e-kOzX5AYjlD0wSSd0CpIRzMMvPooGwlDQ/edit?usp=sharing").getActiveSheet();
+    var data = JSON.parse(e.postData.contents);
+    sheet.appendRow([new Date(), data.name, data.email, data.message]);
+    return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
+}
+</script>
+<script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzfrCgDk9PGvXPwkE7AgvYTmwbLfVL2BYxZZJvOYIb_B69w-siUmg7tKIr4QBEEUTvt/exec";
+    const form = document.forms["submit-to-google-sheet"];
+  
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then(response => alert("Form submitted successfully!"))
+            .catch(error => console.error("Error!", error.message));
+    });
+</script>
+<script>
+    document.querySelectorAll('.nav-link').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            if (this.getAttribute("href").charAt(0) === "#") {
+    e.preventDefault();
+}
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - 50, // Adjust for navbar height
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+<script>
+const cursor = document.querySelector(".custom-cursor");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+});
+
+
+</script>
     </body>
 </html>
+
+

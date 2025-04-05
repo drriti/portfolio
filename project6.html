@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UI/UX Design – Project 6</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .project-page {
+      padding: 60px 8%;
+    }
+
+    .project-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .project-header h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .project-header p {
+      color: #ababab;
+      font-size: 16px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 40px;
+    }
+
+    .project-item {
+      background-color: #111;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .project-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-img img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .project-description {
+      padding: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .project-description h3 {
+      margin: 0 0 10px;
+      color: #ff004f;
+      font-size: 18px;
+    }
+    .back-link {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #fff;
+  background: #ff004f;
+  padding: 12px 30px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.back-link a:hover {
+  background: #e10045;
+}
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+  background-color: transparent;
+  position: fixed;
+  pointer-events: none;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+}
+
+  </style>
+</head>
+<body class="project-page">
+
+  <section class="project-header">
+    <h1>UI/UX Design Showcase</h1>
+    <p>Featuring website and mobile app designs built in Figma and brought to life through mockups.</p>
+  </section>
+
+  <section class="project-grid">
+    <div class="project-item">
+      <div class="project-img"><img src="images/iMac_on_Table_Mockup_1.png" alt="Website Design 1" /></div>
+      <div class="project-description">
+        <h3>Website Design – Concept 1</h3>
+        A modern landing page with a minimal layout and clean typography, focused on digital services.
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-img"><img src="images/iMac_on_Table_Mockup_3.png" alt="Website Design 2" /></div>
+      <div class="project-description">
+        <h3>Website Design – Concept 2</h3>
+        A creative portfolio website showcasing visual projects with smooth interactions and grid systems.
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-img"><img src="images/Macbook_Air_Mockup_2.png" alt="Responsive Website Design" /></div>
+      <div class="project-description">
+        <h3>Responsive Web Design</h3>
+        Designed with adaptability in mind, this layout scales beautifully across devices and screen sizes.
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-img"><img src="images/Macbook_Air_Mockup_3.png" alt="Interactive Web UI" /></div>
+      <div class="project-description">
+        <h3>Interactive UI</h3>
+        Interactive product page with visual hierarchy and call-to-action focus for better user engagement.
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-img"><img src="images/Free_iPhone_16_Mockup_2.png" alt="App Design – Home Screen" /></div>
+      <div class="project-description">
+        <h3>Mobile App – Home Screen</h3>
+        A clean home interface with personalized recommendations and modern iconography.
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-img"><img src="images/Free_iPhone_16_Mockup_4.png" alt="App Design – Features" /></div>
+      <div class="project-description">
+        <h3>App Features</h3>
+        Showcases app's key features using card-based layout, making navigation intuitive and fast.
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-img"><img src="images/Free_iPhone_16_Mockup_5.png" alt="User Flow Design" /></div>
+      <div class="project-description">
+        <h3>User Flow</h3>
+        Designed for ease of use with a logical flow and consistent design system for mobile platforms.
+      </div>
+    </div>
+    <div class="project-item">
+      <div class="project-img">
+        <img src="images/Free_iPhone_16_Mockup_3.png" alt="Mobile App – Expense Tracker" />
+      </div>
+      <div class="project-description">
+        <h3>Mobile App – Expense Tracker</h3>
+        Track and visualize daily expenses through an intuitive and colorful interface.
+      </div>
+    </div>
+    
+  </section>
+  <div class="back-link">
+    <a href="index.html#portfolio">← Back to Portfolio</a>
+  </div>
+  <div class="custom-cursor"></div>
+  <script>
+    const cursor = document.querySelector(".custom-cursor");
+    
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.clientX + "px";
+      cursor.style.top = e.clientY + "px";
+    });
+    </script>
+    
+  
+</body>
+</html>

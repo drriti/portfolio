@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jrissy - Jewelry Brand Identity</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px 40px;
+    }
+
+    .sub-title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #ccc;
+    }
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      max-height: 750px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 50px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .project-images img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 16px;
+      max-height: 500px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .project-images img:hover {
+      transform: scale(1.04);
+    }
+
+    .back-button {
+      display: inline-block;
+      background-color: #ff2674;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 30px;
+      transition: background 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #e62165;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 30px 0 10px;
+      color: #aaa;
+    }
+
+    /* Custom cursor */
+    .custom-cursor {
+      width: 20px;
+      height: 20px;
+      border: 2px solid red;
+      border-radius: 50%;
+      background-color: transparent;
+      position: fixed;
+      pointer-events: none;
+      z-index: 1000;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="custom-cursor"></div>
+
+  <!-- Back button -->
+  <a href="#" onclick="history.back();" class="back-button">&#8592; Back to Portfolio</a>
+
+  <!-- Project section -->
+  <section id="project">
+    <div class="container">
+      <h1 class="sub-title">Jrissy - Jewelry Brand Identity</h1>
+      <p class="description">
+        A premium and elegant brand identity designed for Jrissy, a modern jewelry brand. The project focuses on luxury, minimalism, and timeless aesthetics.
+      </p>
+
+      <!-- Main large image -->
+      <img src="images/jrissylogo.png" alt="Main Branding Image" class="main-image" loading="lazy">
+
+      <!-- Supporting images -->
+      <div class="project-images">
+        <img src="images/mockup2.png" alt="Jrissy Branding 2">
+        <img src="images/mockup.png" alt="Jrissy Branding 3">
+        <img src="images/vb.png" alt="Jrissy Branding 4">
+      </div>
+
+      <p class="description">
+        The brand identity includes logo design, color palette, typography, packaging, and marketing materials, all curated to reflect Jrissy’s luxurious and modern appeal.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Jrissy – All Rights Reserved
+  </footer>
+
+  <!-- Cursor script -->
+  <script>
+    const cursor = document.querySelector(".custom-cursor");
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.clientX + "px";
+      cursor.style.top = e.clientY + "px";
+    });
+  </script>
+</body>
+</html>
